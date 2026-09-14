@@ -1,6 +1,10 @@
 # Documento de análisis y diseño — Sistema de préstamo de equipo del Laboratorio
 
-**Equipo 0** · Integrantes: (ejemplo del profesor) · Fecha: 14-sep-2026 · Repositorio: `Clase-DS_O26-lab-prestamos` · Rama: `docs/analisis-diseno`
+**Equipo 0** 
+· Integrantes: (ejemplo del profesor) 
+· Fecha: 14-sep-2026 ·
+ Repositorio: `Clase-DS_O26-lab-prestamos` 
+ · Rama: `docs/analisis-diseno`
 
 > Documentos de los que depende este: [backlog](./backlog.md) · [modelo de datos](./modelo-datos.md) · [modelo de documentos](./modelo-documentos.md) · [decisión de motor](./decision-motor.md)
 
@@ -8,7 +12,7 @@
 
 ## 1. El sistema en una página
 
-**Qué problema resuelve.** El laboratorio presta equipo —multímetros, osciloscopios, kits de desarrollo, cámaras— a alumnos y profesores. Hoy el registro se lleva en una libreta en el mostrador. Como consecuencia: nadie puede responder en el momento qué está prestado y a quién, no hay forma de saber quién tenía un equipo que volvió dañado, y el administrador descubre los retrasos hasta que alguien pregunta por un equipo que no aparece.
+**Qué problema resuelve.** El laboratorio presta equipo (multímetros, osciloscopios, kits de desarrollo, cámaras) a alumnos y profesores. Hoy el registro se lleva en una libreta en el mostrador. Como consecuencia: nadie puede responder en el momento qué está prestado y a quién, no hay forma de saber quién tenía un equipo que volvió dañado, y el administrador descubre los retrasos hasta que alguien pregunta por un equipo que no aparece.
 
 **Para quién.** El usuario principal es el **administrador del laboratorio**, que es quien registra, autoriza y recibe. Los **prestatarios** —alumnos y profesores, tratados igual— consultan lo suyo y solicitan.
 
@@ -23,19 +27,20 @@
 
 ## 2. Qué hace — backlog priorizado
 
-Backlog completo: [`docs/backlog.md`](./backlog.md) · *Aquí solo va el resumen. El backlog no se copia, se enlaza.*
+Backlog completo: [`docs/backlog.md`](./backlog.md) 
+· *Aquí solo va el resumen. El backlog no se copia, se enlaza.*
 
-| Prioridad | # | Historia | Criterios de aceptación |
-| --- | --- | --- | --- |
-| **Must** | #03 | Registrar un préstamo de uno o varios equipos | 3 |
-| **Must** | #05 | Consultar qué está prestado ahora mismo | 2 |
-| **Must** | #07 | Registrar la devolución completa de un préstamo | 2 |
-| **Must** | #08 | Reservar un equipo con anticipación | 2 |
-| **Must** | #12 | Registrar daño de un equipo al devolverlo | 1 |
-| **Should** | #14 | Ver el historial de préstamos de una persona | 2 |
-| **Should** | #16 | Ajustar la duración que propuso el prestatario | 1 |
-| **Could** | #19 | Ver quién devuelve tarde con frecuencia | 1 |
-| **Won't** | #21 | Bloquear automáticamente a quien acumule retrasos | — |
+| Prioridad  | #   | Historia                                          | Criterios de aceptación |
+| ---------- | --- | ------------------------------------------------- | ----------------------- |
+| **Must**   | #03 | Registrar un préstamo de uno o varios equipos     | 3                       |
+| **Must**   | #05 | Consultar qué está prestado ahora mismo           | 2                       |
+| **Must**   | #07 | Registrar la devolución completa de un préstamo   | 2                       |
+| **Must**   | #08 | Reservar un equipo con anticipación               | 2                       |
+| **Must**   | #12 | Registrar daño de un equipo al devolverlo         | 1                       |
+| **Should** | #14 | Ver el historial de préstamos de una persona      | 2                       |
+| **Should** | #16 | Ajustar la duración que propuso el prestatario    | 1                       |
+| **Could**  | #19 | Ver quién devuelve tarde con frecuencia           | 1                       |
+| **Won't**  | #21 | Bloquear automáticamente a quien acumule retrasos | —                       |
 
 **Won't have justificado.** #21 se dejó fuera porque el cliente fue explícito: no existe una regla de autorización formal, el administrador usa su criterio en el momento. Automatizar una sanción sería inventar una política que la institución no tiene.
 
