@@ -16,7 +16,23 @@ Toda la documentación vive en `docs/`, como cinco notas enlazadas entre sí:
 | `docs/modelo-documentos.md` | La alternativa en documentos |
 | `docs/decision-motor.md` | La decisión de motor y su justificación |
 
-## Cómo leerlo
+## Aplicación (React + Vite)
+
+El prototipo vive en `src/`: un catálogo de equipos con búsqueda y filtro de disponibles.
+
+```bash
+npm install
+npm run dev
+```
+
+| Ruta | Qué es |
+| --- | --- |
+| `src/App.jsx` | Componente raíz |
+| `src/components/Catalogo.jsx` | Estado de búsqueda y filtro; valores derivados |
+| `src/components/TarjetaEquipo.jsx` | Tarjeta de un equipo (recibe props) |
+| `src/data/equipos.js` | Datos de ejemplo |
+
+## Cómo leer la documentación
 
 Abrir la carpeta `docs/` como vault en Obsidian (no la raíz del repositorio) y activar el **modo lectura**. Los enlaces son relativos en Markdown estándar, así que funcionan también en GitHub y en VS Code.
 
